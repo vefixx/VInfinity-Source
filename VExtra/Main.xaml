@@ -1,0 +1,37 @@
+﻿<Window x:Class="VExtra.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VExtra"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Main" Icon="/Resources/iconLogo.ico" Background="{x:Null}" ResizeMode="NoResize" Height="500" Width="950" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" MouseLeftButtonDown="WindowDrag">
+    <materialDesign:Card UniformCornerRadius="5" Background="{DynamicResource MaterialDesignPaper}" materialDesign:ShadowAssist.ShadowDepth="Depth4" Margin="5">
+        <Grid>
+            <StackPanel Orientation="Horizontal" Height="20" VerticalAlignment="Top" Name="ToolBar">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Name="Icon">
+                    <materialDesign:PackIcon Kind="AllInclusive" Width="30" Height="20"></materialDesign:PackIcon>
+                    <TextBlock Margin="0 1 0 0" TextAlignment="Center" FontFamily="Open Sans" Text="Infinity"></TextBlock>
+                </StackPanel>
+                <StackPanel Margin="767 0 0 0" Orientation="Horizontal">
+                    <Button Height="20" Style="{StaticResource MaterialDesignFlatButton}" Click="btn_WindowMinimized_Click">
+                        <materialDesign:PackIcon Foreground="#1e1e1e" Kind="WindowMinimize" Height="10" Width="20"></materialDesign:PackIcon>
+                    </Button>
+                    <Button Height="20" Style="{StaticResource MaterialDesignFlatButton}" Click="btn_WindowClose_Click">
+                        <materialDesign:PackIcon Foreground="#1e1e1e" Kind="WindowClose" Height="10" Width="20"></materialDesign:PackIcon>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="30" Margin="0 20 0 0" VerticalAlignment="Top" Name="MenuButtons">
+                <Button x:Name="MainMenu_btn" Margin="2 0 0 0" Foreground="#1e1e1e" Height="30" Width="156" FontFamily="Open Sans" FontWeight="SemiBold" Content="Главное меню" Style="{StaticResource MaterialDesignFlatButton}" MouseEnter="bth_MainMenu_Hover" MouseLeave="btn_MainMenu_UnHover" Click="btn_MainMenu_Click"></Button>
+                <Button x:Name="Autoposter_btn" Height="30" Foreground="#1e1e1e" Width="156" FontFamily="Open Sans" FontWeight="SemiBold" Content="Автопостер" Style="{StaticResource MaterialDesignFlatButton}" MouseEnter="btn_Autoposter_Hover" MouseLeave="btn_Autoposter_UnHover" Click="btn_AutoPosterMenu_Click"></Button>
+                <Button x:Name="Parser_btn" Height="30" Foreground="#1e1e1e" Width="156" FontFamily="Open Sans" FontWeight="SemiBold" Content="Парсер" Style="{StaticResource MaterialDesignFlatButton}" MouseEnter="btn_Parser_Hover" MouseLeave="btn_Parser_UnHover" Click="btn_ParserMenu_Click"></Button>
+                <Button x:Name="Notifications_btn" Height="30" Foreground="#1e1e1e" Width="156" FontFamily="Open Sans" FontWeight="SemiBold" Content="Уведомления" Style="{StaticResource MaterialDesignFlatButton}" MouseEnter="btn_Notifications_Hover" MouseLeave="btn_Notification_UnHover" Click="btn_NotificationMenu_Click"></Button>
+                <Button x:Name="Logs_btn" Height="30" Foreground="#1e1e1e" Width="156" FontFamily="Open Sans" FontWeight="SemiBold" Content="Логи" Style="{StaticResource MaterialDesignFlatButton}" MouseEnter="btn_Logs_Hover" MouseLeave="btn_Logs_UnHover" Click="btn_LogsMenu_Click"></Button>
+                <Button x:Name="Settings_btn" Height="30" Foreground="#1e1e1e" Width="156" FontFamily="Open Sans" FontWeight="SemiBold" Content="Настройки (CFG)" Style="{StaticResource MaterialDesignFlatButton}" MouseEnter="btn_CFG_Hover" MouseLeave="btn_CFG_UnHover" Click="btn_SettingsMenu_Click"></Button>
+            </StackPanel>
+            <ContentControl Margin="0 50 0 0" x:Name="CC"></ContentControl>
+        </Grid>
+    </materialDesign:Card>
+</Window>

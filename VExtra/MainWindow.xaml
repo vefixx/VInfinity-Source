@@ -1,0 +1,32 @@
+﻿<Window x:Class="VExtra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VExtra"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Icon="/Resources/iconLogo.ico" Background="{x:Null}" ResizeMode="NoResize" Height="500" Width="850" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
+    <materialDesign:Card UniformCornerRadius="15" Background="{DynamicResource MaterialDesignPaper}" materialDesign:ShadowAssist.ShadowDepth="Depth4" Margin="5">
+        <Grid>
+            <StackPanel HorizontalAlignment="Right" Width="400">
+                <Border Height="490" BorderBrush="White" BorderThickness="5 0 0 0">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Opacity="0.8" Margin="0 200 0 0" FontFamily="Azonix" Text="V. INFINITY" TextAlignment="Center" FontSize="55"></TextBlock>
+                        <TextBlock Opacity="0.6" Margin="0 0 0 0" FontFamily="Azonix" Text="by" TextAlignment="Center" FontSize="15"></TextBlock>
+                        <TextBlock Opacity="0.6" Margin="0 5 0 0" FontFamily="Azonix" Text="v scripts" TextAlignment="Center" FontSize="20"></TextBlock>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Width="440">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontFamily="Open Sans" FontSize="16" Margin="5 0 0 0" FontWeight="SemiBold" Text="Загрузка VInfinity"></TextBlock>
+                    <ProgressBar x:Name="progressbar" Value="0" Width="300" Margin="2 5 140 0" Height="1"></ProgressBar>
+                    <TextBlock x:Name="textLoading" FontFamily="Open Sans" FontSize="9" Margin="2 0 0 0" FontWeight="SemiBold" Text="Загрузка компонентов приложения.."></TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <TextBlock VerticalAlignment="Bottom" Margin="5 0 0 0" FontFamily="Open Sans" FontWeight="Bold" Opacity="0.5" Text="TEST BUILD "></TextBlock>
+        </Grid>
+    </materialDesign:Card>
+</Window>

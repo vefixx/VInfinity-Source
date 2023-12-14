@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="VExtra.UserControls.MainMenuControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VExtra.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="440" d:DesignWidth="950" Background="{StaticResource MaterialDesignPaper}">
+    <Grid>
+        <StackPanel Width="950" Margin="0 50 0 0" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical">
+            <materialDesign:PackIcon Margin="425 0 0 0" Kind="AllInclusive" Opacity="0.9" Height="80" Width="100"></materialDesign:PackIcon>
+            <TextBlock FontFamily="Azonix" Text="V. Infinity" TextAlignment="Center" Opacity="0.7" FontSize="30"></TextBlock>
+            <TextBlock FontFamily="Azonix" Text="beta-test" TextAlignment="Center" Opacity="0.7" FontSize="8"></TextBlock>
+            <TextBlock FontFamily="Open Sans" Text="created by vefixx" FontWeight="Bold" TextAlignment="Center" Opacity="0.7" FontSize="15"></TextBlock>
+            <TextBlock Margin="0 30 0 0" FontFamily="Open Sans" Text="CONTACTS" FontWeight="Bold" TextAlignment="Center" Opacity="0.7" FontSize="20"></TextBlock>
+            <TextBlock Margin="0 15 0 0" FontFamily="Open Sans" Text="Сервер: discord.gg/NCxYg7skc5" FontWeight="SemiBold" TextAlignment="Center" Opacity="0.7" FontSize="15"></TextBlock>
+            <TextBlock Margin="0 5 0 0" FontFamily="Open Sans" Text="Дискорд: vefixx" FontWeight="SemiBold" TextAlignment="Center" Opacity="0.7" FontSize="15"></TextBlock>
+            <TextBlock Margin="0 5 0 0" FontFamily="Open Sans" Text="ТГ: @vsupman" FontWeight="SemiBold" TextAlignment="Center" Opacity="0.7" FontSize="15"></TextBlock>
+            <TextBlock Margin="0 5 0 0" FontFamily="Open Sans" Text="GitHub: github.com/vefixx" FontWeight="SemiBold" TextAlignment="Center" Opacity="0.7" FontSize="15"></TextBlock>
+        </StackPanel>    
+    </Grid>
+</UserControl>
